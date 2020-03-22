@@ -15,7 +15,7 @@ spec:
         app: production
     spec:
       containers:
-      - name: GitHub Website
+      - name: github-website
         image: hanuman8698/github_website
         ports:
         - containerPort: 80
