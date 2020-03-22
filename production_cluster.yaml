@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: production-deployment
+  name: production_deployment
   labels:
     app: production
 spec:
