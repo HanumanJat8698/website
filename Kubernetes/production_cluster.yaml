@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: prod-deploy
+  name: production_deployment
   labels:
     app: production
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: production
@@ -15,7 +15,7 @@ spec:
         app: production
     spec:
       containers:
-      - name: github-website
+      - name: GitHub Website
         image: hanuman8698/github_website
         ports:
         - containerPort: 80
